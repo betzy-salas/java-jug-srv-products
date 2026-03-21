@@ -285,9 +285,9 @@ Implementación completa de la SDD Products API en Java 17 + Spring Boot 3.2 sig
   - [x] 20.2 Verificar que la rama activa es `feat/product-management` con `git branch --show-current`
   - _Requirements: Flujo de entrega_
 
-- [-] 21. Commit del código generado con Conventional Commits
-  - [-] 21.1 Ejecutar `git add .` para agregar todos los archivos generados
-  - [ ] 21.2 Ejecutar el commit con el mensaje:
+- [x] 21. Commit del código generado con Conventional Commits
+  - [x] 21.1 Ejecutar `git add .` para agregar todos los archivos generados
+  - [x] 21.2 Ejecutar el commit con el mensaje:
     ```
     feat(products): implement product management CRUD API
 
@@ -304,17 +304,17 @@ Implementación completa de la SDD Products API en Java 17 + Spring Boot 3.2 sig
     ```
   - _Requirements: REQ-001 a REQ-007, Conventional Commits_
 
-- [ ] 22. Push al repositorio remoto
-  - [ ] 22.1 Verificar que la variable de entorno `GITHUB_REPO_URL` está configurada
+- [x] 22. Push al repositorio remoto
+  - [x] 22.1 Verificar que la variable de entorno `GITHUB_REPO_URL` está configurada
     - Si no está configurada, detener y notificar al usuario: "Configura GITHUB_REPO_URL con la URL HTTPS de tu repositorio en GitHub antes de continuar"
-  - [ ] 22.2 Ejecutar `git remote add origin $GITHUB_REPO_URL`
-  - [ ] 22.3 Ejecutar `git push -u origin feat/product-management`
+  - [x] 22.2 Ejecutar `git remote add origin $GITHUB_REPO_URL`
+  - [x] 22.3 Ejecutar `git push -u origin feat/product-management`
     - Si el push falla por autenticación, verificar que `GITHUB_TOKEN` está configurado y usar: `git remote set-url origin https://$GITHUB_TOKEN@<host>/<org>/<repo>.git`
   - _Requirements: Flujo de entrega_
 
-- [ ] 23. Crear Pull Request en GitHub
-  - [ ] 23.1 Verificar que `GITHUB_TOKEN` está configurado como variable de entorno
-  - [ ] 23.2 Crear el PR via GitHub CLI (`gh pr create`) con:
+- [-] 23. Crear Pull Request en GitHub
+  - [x] 23.1 Verificar que `GITHUB_TOKEN` está configurado como variable de entorno
+  - [-] 23.2 Crear el PR via GitHub CLI (`gh pr create`) con:
     - `--base develop`
     - `--title "feat(products): implement product management CRUD API"`
     - `--body` con la descripción completa incluyendo:
